@@ -13,14 +13,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px 20px; */
-    /* padding-left: 200px;  */
-    background-color: #333;
+    background-color: rgba(75, 75, 75, 0.5); /* Adjust transparency */
     color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(5px); 
 }
 
 .logo {
@@ -63,9 +62,7 @@ nav ul li a:hover {
     display: flex; /* Make the navigation items visible */
 }
 
-main {
-    padding-top: 78px; /* Adjusted for fixed header */
-}
+
 
 .what-is-content {
     display: flex;
@@ -83,7 +80,7 @@ main {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 200px 20px; /* Adjust based on the image */
+    padding: 300px ; /* Adjust based on the image */
 }
 
 .banner-content {
@@ -147,9 +144,7 @@ main {
     background-color: #f39c12;
 }
 
-section {
-    margin-bottom: 40px;
-}
+
 
 footer {
     text-align: center;
@@ -235,7 +230,24 @@ footer {
     margin-bottom: 2rem; /* Adjust margin as needed */
   }
 
+  .sysOverImg{
+    max-width: 650px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .sysOverImg:hover{
+    max-width: 650px;
+    transform: scale(1.2);
+  }
+
+
   .whatIs-content1 {
+    display: flex;
+    flex-direction: row; /* Adjust for horizontal layout if needed */
+    align-items: center;
+    text-align: justify;
+  }
+
+  .sysOver-content1{
     display: flex;
     flex-direction: row; /* Adjust for horizontal layout if needed */
     align-items: center;
@@ -265,6 +277,13 @@ footer {
     line-height: 1.5; 
   }
 
+  .sysOver-text1 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    padding-left: 50px;
+    line-height: 1.5; 
+  }
+
   .gap-text1 {
     font-size: 1.2rem; /* Adjust font size as needed */
     margin-bottom: 2rem; /* Adjust margin as needed */
@@ -278,6 +297,59 @@ footer {
     padding-left: 100px;
     line-height: 1.5; 
   }
+
+  .tech-content1{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Adjust the gap as needed */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
+
+  }
+
+  .tech-text1{
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height equal to the width */
+    border-radius: 50%; /* Makes the box round */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    text-align: center; 
+  }
+
+  .tech-text1:hover {
+    box-shadow: 0 0 50px rgba(70, 70, 70, 0.849); 
+  }
+
+  .tech-Img{
+    max-width: 100px;
+  }
+
+  .tech-inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text within the h3 */
+    justify-content: center; /* Centers items vertically */
+    transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */ 
+  }
+  
+  .tech-inner-box:hover {
+    transform: scale(1.1); /* Scales the element by 1.1 times on hover */
+  }
+
+
+
+
+  @media screen and (max-width: 1024px) { /* Adjust the max-width value as needed */
+    .sysOver-text1 {
+        padding: 30px;
+    }
+    .sysOver-content1{
+        flex-direction: column; 
+    }
+}
   
   @media screen and (max-width: 768px) { /* Adjust the max-width value as needed */
     .whatIs-content1 {
@@ -295,6 +367,70 @@ footer {
     .lit-survey-image1{
         display: none;
     }
+    .sysOver-text1 {
+        padding: 30px;
+    }
+    .sysOver-text1 {
+        padding: 30px;
+    }
+    .sysOver-content1{
+        flex-direction: column; 
+    }
 }
 
 
+/* This is for the Overview diagram image */
+@media only screen and (max-width: 600px) {
+    .sysOverImg {
+      max-width: 90%;
+    }
+  }
+  
+  /* For medium devices (tablets, 600px to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sysOverImg {
+      max-width: 80%;
+    }
+  }
+  
+  /* For large devices (desktops, 768px and up) */
+  @media only screen and (min-width: 769px) {
+    .sysOverImg {
+      max-width: 650px;
+    }
+  }
+
+
+  /* This is for technologiers section  */
+  @media (max-width: 1200px) {
+    .tech-Img {
+      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+    .tech-Img{
+        max-width: 100px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .tech-Img {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+    .tech-Img{
+        max-width: 90px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .tech-Img {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row */
+    }
+    .tech-Img{
+        max-width: 70px;
+      }
+  }
+
+
+
+
+
+  
