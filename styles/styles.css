@@ -1,0 +1,300 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    /* padding-left: 200px;  */
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.navBtns {
+    padding-right: 100px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.navBtns.show {
+    display: flex; /* Make the navigation items visible */
+}
+
+main {
+    padding-top: 78px; /* Adjusted for fixed header */
+}
+
+.what-is-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what-is-content img {
+    max-width: 50%; /* Adjust as needed */
+}
+
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px; /* Adjust based on the image */
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 20px;
+}
+
+.features-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.features-section li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f1f1f1;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #f39c12;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.menu-btn {
+    display: none; /* Initially hide the menu button */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navBtns {
+        display: none; /* Hide navigation buttons */
+        flex-direction: column; /* Arrange vertically */
+        background-color: #333; /* Background color for the menu */
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .navBtns li {
+        margin-bottom: 10px;
+    }
+
+    .navBtns li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu-btn {
+        display: block; /* Show menu button */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1001;
+    }
+}
+
+
+.autoAlignContainer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px; /* You may adjust the max-width value as needed */
+    padding-left: 1rem; /* Assuming 1rem is the base unit for padding in your design */
+    padding-right: 1rem; /* /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+.whatIs-div1 {
+    background-color: #BBDEFB;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.lit-survey-div1{
+    background-color: #cccccc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+  
+  .whatIs-title1 {
+    text-align: center;
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+  }
+
+  .whatIs-content1 {
+    display: flex;
+    flex-direction: row; /* Adjust for horizontal layout if needed */
+    align-items: center;
+    text-align: justify;
+  }
+
+  .probSol-content1 {
+    display: flex;
+    flex-direction: row; /* Adjust for horizontal layout if needed */
+    align-items: center;
+    text-align: justify;
+    gap: 40px;
+  }
+
+  .RObject-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    gap: 50px;
+}
+
+  .whatIs-text1 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    padding-right: 100px;
+    line-height: 1.5; 
+  }
+
+  .gap-text1 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    line-height: 1.5; 
+    text-align: justify;
+  }
+
+  .lit-survey-text1 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    padding-left: 100px;
+    line-height: 1.5; 
+  }
+  
+  @media screen and (max-width: 768px) { /* Adjust the max-width value as needed */
+    .whatIs-content1 {
+        flex-direction: column; /* Change align-items to row for small screens */
+    }
+    .probSol-content1 {
+        flex-direction: column; /* Change align-items to row for small screens */
+    }
+    .whatIs-text1 {
+        padding: 30px;
+    }
+    .lit-survey-text1 {
+        padding: 30px; 
+    }
+    .lit-survey-image1{
+        display: none;
+    }
+}
+
+
