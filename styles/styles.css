@@ -9,12 +9,16 @@ body {
     box-sizing: border-box;
 }
 
+
+/* #039dfc */
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(75, 75, 75, 0.5); /* Adjust transparency */
-    color: #fff;
+    background-color: #c9c9c95b; /* Adjust transparency */
+    color: #000000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -49,13 +53,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: black;
 }
 
 .navBtns.show {
@@ -75,7 +79,7 @@ nav ul li a:hover {
 }
 
 .banner {
-    background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -86,6 +90,27 @@ nav ul li a:hover {
 .banner-content {
     max-width: 800px;
     margin: 0 auto;
+    color : #039dfc
+}
+
+.about-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap as needed */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center;
+}
+
+.about-card-top{
+    background-color:#039dfc ;
+    height: 220px;
+    width:  220px;
+}
+
+.about-card-bot{
+    background-color:#1a71a7 ;
+    height: 220px;
+    width:  220px;
 }
 
 /* About Section */
@@ -93,6 +118,7 @@ nav ul li a:hover {
     background-color: #f9f9f9;
     padding: 80px 20px;
     text-align: center;
+    margin-top: 120px;
 }
 
 /* Features Section */
@@ -213,15 +239,21 @@ footer {
 
 
 .whatIs-div1 {
-    background-color: #BBDEFB;
+    background-color: #ffffff;
     padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .lit-survey-div1{
-    background-color: #cccccc;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    background-color: #ffffff;
+    padding-top: 30px;
+}
+
+.commonDiv{
+    padding-top: 120px;
+}
+
+.sysOver-div1{
+    padding-top: 120px;
 }
   
   .whatIs-title1 {
@@ -270,6 +302,12 @@ footer {
     gap: 50px;
 }
 
+.RObject-card {
+background-color: #039dfc3a;
+padding: 40px;
+border-radius: 25px;
+}
+
   .whatIs-text1 {
     font-size: 1.2rem; /* Adjust font size as needed */
     margin-bottom: 2rem; /* Adjust margin as needed */
@@ -304,11 +342,30 @@ footer {
   gap: 30px; /* Adjust the gap as needed */
   align-items: center; /* Centers items horizontally */
   justify-content: center;
+  }
 
+  .gap-div1{
+    margin-top: 60px;
+  }
+
+  .RObject-div1{
+    margin-top: 120px;
+  }
+
+  .gap-title1 {
+    text-align: center;
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 3rem; /* Adjust margin as needed */
+  }
+
+  .gap-card{
+    background-color: #ebebeb3d;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .tech-text1{
-    background-color: #f0f0f0; /* Adjust the background color as needed */
+    background-color: #ffffff; /* Adjust the background color as needed */
     width: 200px; /* Set a fixed width */
     height: 200px; /* Set a fixed height equal to the width */
     border-radius: 50%; /* Makes the box round */
@@ -316,14 +373,19 @@ footer {
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
     text-align: center; 
+    border-color: #e9e9e9;
+    border-style: solid;
   }
 
   .tech-text1:hover {
-    box-shadow: 0 0 50px rgba(70, 70, 70, 0.849); 
+    background-color: white;
+    box-shadow: 0 0 80px #039dfc85; 
+    
   }
 
   .tech-Img{
     max-width: 100px;
+    transition: transform 0.2s ease-in-out;
   }
 
   .tech-inner-box {
@@ -333,10 +395,19 @@ footer {
     text-align: center; /* Centers text within the h3 */
     justify-content: center; /* Centers items vertically */
     transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */ 
+
   }
   
   .tech-inner-box:hover {
     transform: scale(1.1); /* Scales the element by 1.1 times on hover */
+  }
+
+  .tech-inner-box:hover .tech-Img {
+    transform: scale(1.3); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
+  }
+
+  .blueText{
+    color: #039dfc
   }
 
 
