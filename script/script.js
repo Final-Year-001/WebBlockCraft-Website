@@ -57,3 +57,26 @@ function downloadPDF(pdfUrl, desiredFilename) {
       // Offer an alternative download method (e.g., server-side download)
     }
   }
+
+
+  const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Simple validation (can be extended further)
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  if (name === '' || email === '' || message === '') {
+    alert('Please fill in all required fields.');
+    return; // Exit if validation fails
+  }
+
+  // Simulate form submission (replace with your actual logic)
+  alert('Form submitted successfully! \n Name: ' + name + '\n Email: ' + email + '\n Message: ' + message);
+
+  // Clear the form after successful submission (optional)
+  form.reset();
+});
