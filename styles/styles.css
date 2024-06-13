@@ -1,12 +1,12 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -14,292 +14,329 @@ body {
 
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c9c9c95b; /* Adjust transparency */
-    color: #000000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(5px); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9c9c95b; /* Adjust transparency */
+  color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px); 
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
 }
 
 .navBtns {
-    padding-right: 100px;
+  padding-right: 100px;
 }
 
 .logo img {
-    height: 50px;
-    margin-right: 10px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
+  position: relative; /* Add this to position the dropdown menu */
 }
 
 nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: black;
+  color: black;
 }
 
 .navBtns.show {
-    display: flex; /* Make the navigation items visible */
+  display: flex; /* Make the navigation items visible */
+}
+.navBtns .dropdown-menu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+z-index: 1;
 }
 
+.navBtns .dropdown-item {
+padding: 10px 15px;
+text-decoration: none;
+color: black;
+display: block;
+transition: background-color 0.3s, color 0.3s;
+}
 
+.navBtns li:hover .dropdown-menu {
+display: block;
+}
+
+/* Dropdown icon styling */
+.dropdown-icon {
+margin-left: 5px;
+font-size: 12px;
+transition: transform 0.3s;
+}
+
+.navBtns li:hover .dropdown-icon {
+transform: rotate(180deg); /* Optional: rotate the icon when the menu is open */
+}
+
+/* Submenu item hover effect */
+.navBtns .dropdown-item:hover {
+background-color: #f0f0f0; /* Change to desired hover background color */
+color: #000; /* Change to desired hover text color */
+}
 
 .what-is-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .what-is-content img {
-    max-width: 50%; /* Adjust as needed */
+  max-width: 50%; /* Adjust as needed */
 }
 
 .banner {
-    /* background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 300px ; /* Adjust based on the image */
+  /* background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 300px ; /* Adjust based on the image */
 }
 
 .banner-content {
-    max-width: 800px;
-    margin: 0 auto;
-    color : #039dfc
+  max-width: 800px;
+  margin: 0 auto;
+  color : #039dfc
 }
 
 .about-main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; /* Adjust the gap as needed */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Adjust the gap as needed */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
 }
 
 .about-card-top{
-    background-color:#039dfc ;
-    height: 220px;
-    width:  220px;
+  background-color:#039dfc ;
+  height: 220px;
+  width:  220px;
 }
 
 .about-card-bot{
-    background-color:#1a71a7 ;
-    height: 220px;
-    width:  220px;
+  background-color:#1a71a7 ;
+  height: 220px;
+  width:  220px;
 }
 
 /* About Section */
 .about-section {
-    background-color: #f9f9f9;
-    padding: 80px 20px;
-    text-align: center;
-    margin-top: 120px;
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 120px;
 }
 
 /* Features Section */
 .features-section {
-    padding: 80px 20px;
+  padding: 80px 20px;
 }
 
 .features-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
+  list-style: none;
+  padding: 0;
+  text-align: left;
 }
 
 .features-section li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #f1f1f1;
-    padding: 80px 20px;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-section input,
 .contact-section textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .contact-section button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .contact-section button:hover {
-    background-color: #f39c12;
+  background-color: #f39c12;
 }
 
 
 
 footer {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  bottom: 0;
 }
 
 
 .menu-btn {
-    display: none; /* Initially hide the menu button */
+  display: none; /* Initially hide the menu button */
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .navBtns {
-        display: none; /* Hide navigation buttons */
-        flex-direction: column; /* Arrange vertically */
-        background-color: #333; /* Background color for the menu */
-        position: absolute;
-        top: 60px; /* Adjust based on header height */
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        z-index: 1000;
-    }
+  .navBtns {
+      display: none; /* Hide navigation buttons */
+      flex-direction: column; /* Arrange vertically */
+      background-color: #333; /* Background color for the menu */
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 1000;
+  }
 
-    .navBtns li {
-        margin-bottom: 10px;
-    }
+  .navBtns li {
+      margin-bottom: 10px;
+  }
 
-    .navBtns li a {
-        color: #fff;
-        text-decoration: none;
-    }
+  .navBtns li a {
+      color: #fff;
+      text-decoration: none;
+  }
 
-    .menu-btn {
-        display: block; /* Show menu button */
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-        z-index: 1001;
-    }
+  .menu-btn {
+      display: block; /* Show menu button */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1001;
+  }
 }
 
 
 .autoAlignContainer{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px; /* You may adjust the max-width value as needed */
-    padding-left: 1rem; /* Assuming 1rem is the base unit for padding in your design */
-    padding-right: 1rem; /* /* Adjust padding as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px; /* You may adjust the max-width value as needed */
+  padding-left: 1rem; /* Assuming 1rem is the base unit for padding in your design */
+  padding-right: 1rem; /* /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
 
 .whatIs-div1 {
-    background-color: #ffffff;
-    padding-top: 60px;
+  background-color: #ffffff;
+  padding-top: 60px;
 }
 
 .lit-survey-div1{
-    background-color: #ffffff;
-    padding-top: 30px;
+  background-color: #ffffff;
+  padding-top: 30px;
 }
 
 .commonDiv{
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 .sysOver-div1{
-    padding-top: 120px;
+  padding-top: 120px;
 }
-  
-  .whatIs-title1 {
-    text-align: center;
-    font-size: 2rem; /* Adjust font size as needed */
-    margin-bottom: 2rem; /* Adjust margin as needed */
-  }
 
-  .sysOverImg{
-    max-width: 650px;
-    transition: transform 0.2s ease-in-out;
-  }
-  .sysOverImg:hover{
-    max-width: 650px;
-    transform: scale(1.2);
-  }
+.whatIs-title1 {
+  text-align: center;
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Adjust margin as needed */
+}
+
+.sysOverImg{
+  max-width: 650px;
+  transition: transform 0.2s ease-in-out;
+}
+.sysOverImg:hover{
+  max-width: 650px;
+  transform: scale(1.2);
+}
 
 
-  .whatIs-content1 {
-    display: flex;
-    flex-direction: row; /* Adjust for horizontal layout if needed */
-    align-items: center;
-    text-align: justify;
-  }
+.whatIs-content1 {
+  display: flex;
+  flex-direction: row; /* Adjust for horizontal layout if needed */
+  align-items: center;
+  text-align: justify;
+}
 
-  .sysOver-content1{
-    display: flex;
-    flex-direction: row; /* Adjust for horizontal layout if needed */
-    align-items: center;
-    text-align: justify;
-  }
+.sysOver-content1{
+  display: flex;
+  flex-direction: row; /* Adjust for horizontal layout if needed */
+  align-items: center;
+  text-align: justify;
+}
 
-  .probSol-content1 {
-    display: flex;
-    flex-direction: row; /* Adjust for horizontal layout if needed */
-    align-items: center;
-    text-align: justify;
-    gap: 40px;
-  }
+.probSol-content1 {
+  display: flex;
+  flex-direction: row; /* Adjust for horizontal layout if needed */
+  align-items: center;
+  text-align: justify;
+  gap: 40px;
+}
 
-  .RObject-content1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: justify;
-    gap: 50px;
+.RObject-content1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: justify;
+  gap: 50px;
 }
 
 .RObject-card {
@@ -308,200 +345,199 @@ padding: 40px;
 border-radius: 25px;
 }
 
-  .whatIs-text1 {
-    font-size: 1.2rem; /* Adjust font size as needed */
-    margin-bottom: 2rem; /* Adjust margin as needed */
-    padding-right: 100px;
-    line-height: 1.5; 
-  }
-
-  .sysOver-text1 {
-    font-size: 1.2rem; /* Adjust font size as needed */
-    margin-bottom: 2rem; /* Adjust margin as needed */
-    padding-left: 50px;
-    line-height: 1.5; 
-  }
-
-  .gap-text1 {
-    font-size: 1.2rem; /* Adjust font size as needed */
-    margin-bottom: 2rem; /* Adjust margin as needed */
-    line-height: 1.5; 
-    text-align: justify;
-  }
-
-  .lit-survey-text1 {
-    font-size: 1.2rem; /* Adjust font size as needed */
-    margin-bottom: 2rem; /* Adjust margin as needed */
-    padding-left: 100px;
-    line-height: 1.5; 
-  }
-
-  .tech-content1{
-    display: flex;
-  flex-wrap: wrap;
-  gap: 30px; /* Adjust the gap as needed */
-  align-items: center; /* Centers items horizontally */
-  justify-content: center;
-  }
-
-  .gap-div1{
-    margin-top: 60px;
-  }
-
-  .RObject-div1{
-    margin-top: 120px;
-  }
-
-  .gap-title1 {
-    text-align: center;
-    font-size: 2rem; /* Adjust font size as needed */
-    margin-bottom: 3rem; /* Adjust margin as needed */
-  }
-
-  .gap-card{
-    background-color: #ebebeb3d;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .tech-text1{
-    background-color: #ffffff; /* Adjust the background color as needed */
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height equal to the width */
-    border-radius: 50%; /* Makes the box round */
-    display: flex; /* Use flexbox for centering content */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    text-align: center; 
-    border-color: #e9e9e9;
-    border-style: solid;
-  }
-
-  .tech-text1:hover {
-    background-color: white;
-    box-shadow: 0 0 80px #039dfc85; 
-    
-  }
-
-  .tech-Img{
-    max-width: 100px;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .tech-inner-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers items horizontally */
-    text-align: center; /* Centers text within the h3 */
-    justify-content: center; /* Centers items vertically */
-    transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */ 
-
-  }
-  
-  .tech-inner-box:hover {
-    transform: scale(1.1); /* Scales the element by 1.1 times on hover */
-  }
-
-  .tech-inner-box:hover .tech-Img {
-    transform: scale(1.3); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
-  }
-
-  .blueText{
-    color: #039dfc
-  }
-
-
-
-
-  @media screen and (max-width: 1024px) { /* Adjust the max-width value as needed */
-    .sysOver-text1 {
-        padding: 30px;
-    }
-    .sysOver-content1{
-        flex-direction: column; 
-    }
+.whatIs-text1 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Adjust margin as needed */
+  padding-right: 100px;
+  line-height: 1.5; 
 }
+
+.sysOver-text1 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Adjust margin as needed */
+  padding-left: 50px;
+  line-height: 1.5; 
+}
+
+.gap-text1 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Adjust margin as needed */
+  line-height: 1.5; 
+  text-align: justify;
+}
+
+.lit-survey-text1 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Adjust margin as needed */
+  padding-left: 100px;
+  line-height: 1.5; 
+}
+
+.tech-content1{
+  display: flex;
+flex-wrap: wrap;
+gap: 30px; /* Adjust the gap as needed */
+align-items: center; /* Centers items horizontally */
+justify-content: center;
+}
+
+.gap-div1{
+  margin-top: 60px;
+}
+
+.RObject-div1{
+  margin-top: 120px;
+}
+
+.gap-title1 {
+  text-align: center;
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 3rem; /* Adjust margin as needed */
+}
+
+.gap-card{
+  background-color: #ebebeb3d;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tech-text1{
+  background-color: #ffffff; /* Adjust the background color as needed */
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height equal to the width */
+  border-radius: 50%; /* Makes the box round */
+  display: flex; /* Use flexbox for centering content */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  text-align: center; 
+  border-color: #e9e9e9;
+  border-style: solid;
+}
+
+.tech-text1:hover {
+  background-color: white;
+  box-shadow: 0 0 80px #039dfc85; 
   
-  @media screen and (max-width: 768px) { /* Adjust the max-width value as needed */
-    .whatIs-content1 {
-        flex-direction: column; /* Change align-items to row for small screens */
-    }
-    .probSol-content1 {
-        flex-direction: column; /* Change align-items to row for small screens */
-    }
-    .whatIs-text1 {
-        padding: 30px;
-    }
-    .lit-survey-text1 {
-        padding: 30px; 
-    }
-    .lit-survey-image1{
-        display: none;
-    }
-    .sysOver-text1 {
-        padding: 30px;
-    }
-    .sysOver-text1 {
-        padding: 30px;
-    }
-    .sysOver-content1{
-        flex-direction: column; 
-    }
+}
+
+.tech-Img{
+  max-width: 100px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-inner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text within the h3 */
+  justify-content: center; /* Centers items vertically */
+  transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */ 
+
+}
+
+.tech-inner-box:hover {
+  transform: scale(1.1); /* Scales the element by 1.1 times on hover */
+}
+
+.tech-inner-box:hover .tech-Img {
+  transform: scale(1.3); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
+}
+
+.blueText{
+  color: #039dfc
+}
+
+
+
+
+@media screen and (max-width: 1024px) { /* Adjust the max-width value as needed */
+  .sysOver-text1 {
+      padding: 30px;
+  }
+  .sysOver-content1{
+      flex-direction: column; 
+  }
+}
+
+@media screen and (max-width: 768px) { /* Adjust the max-width value as needed */
+  .whatIs-content1 {
+      flex-direction: column; /* Change align-items to row for small screens */
+  }
+  .probSol-content1 {
+      flex-direction: column; /* Change align-items to row for small screens */
+  }
+  .whatIs-text1 {
+      padding: 30px;
+  }
+  .lit-survey-text1 {
+      padding: 30px; 
+  }
+  .lit-survey-image1{
+      display: none;
+  }
+  .sysOver-text1 {
+      padding: 30px;
+  }
+  .sysOver-text1 {
+      padding: 30px;
+  }
+  .sysOver-content1{
+      flex-direction: column; 
+  }
 }
 
 
 /* This is for the Overview diagram image */
 @media only screen and (max-width: 600px) {
-    .sysOverImg {
-      max-width: 90%;
-    }
+  .sysOverImg {
+    max-width: 90%;
   }
-  
-  /* For medium devices (tablets, 600px to 768px) */
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    .sysOverImg {
-      max-width: 80%;
-    }
+}
+
+/* For medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .sysOverImg {
+    max-width: 80%;
   }
-  
-  /* For large devices (desktops, 768px and up) */
-  @media only screen and (min-width: 769px) {
-    .sysOverImg {
-      max-width: 650px;
-    }
+}
+
+/* For large devices (desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+  .sysOverImg {
+    max-width: 650px;
   }
+}
 
 
-  /* This is for technologiers section  */
-  @media (max-width: 1200px) {
-    .tech-Img {
-      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
-    }
-    .tech-Img{
-        max-width: 100px;
-      }
+/* This is for technologiers section  */
+@media (max-width: 1200px) {
+  .tech-Img {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
   }
-  
-  @media (max-width: 768px) {
-    .tech-Img {
-      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  .tech-Img{
+      max-width: 100px;
     }
-    .tech-Img{
-        max-width: 90px;
-      }
+}
+
+@media (max-width: 768px) {
+  .tech-Img {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
   }
-  
-  @media (max-width: 480px) {
-    .tech-Img {
-      flex: 1 1 calc(100% - 20px); /* 1 item per row */
+  .tech-Img{
+      max-width: 90px;
     }
-    .tech-Img{
-        max-width: 70px;
-      }
+}
+
+@media (max-width: 480px) {
+  .tech-Img {
+    flex: 1 1 calc(100% - 20px); /* 1 item per row */
   }
+  .tech-Img{
+      max-width: 70px;
+    }
+}
 
 
 
 
 
-  
