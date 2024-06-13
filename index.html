@@ -6,6 +6,9 @@
     <title>Web Block Craft</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -51,13 +54,46 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="home" class="banner si1">
-        <div class="banner-content">
-          <h2>Welcome to Web Block Craft</h2>
-          <p>Woah.. this is still under construction</p>
+    <main class="">
+      <!-- <section id="home" class="banner si1 with-bg-image">  <div class="banner-content">
+        <h2>Welcome to Web Block Craft</h2>
+        <p>Woah.. this is still under construction</p>
+      </div>
+    </section> -->
+
+
+    <div class="with-bg-image">
+      <div class="autoAlignContainser home-banner" id="home";">
+        <div class=" banner-content with-img-text" >
+          <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+            <span style="font-size: 5em;">WebBlockCraft</span>
+            <span>Empowering Young Minds to Code Their First Web Application! Where Creativity Meets Coding!</span>
+            <a class="dropdown-item" href="#lit" style="color: inherit; text-decoration: none;">
+              <div class="home-btn">
+                Get Started
+              </div>
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div class="smol-screen">
+      <div style="padding-bottom: 100px;" id="home" >
+        <div class=" banner-content" >
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 3em;">WebBlockCraft</span>
+            <span style="text-align: center; padding: 20px;">Empowering Young Minds to Code Their First Web Application! Where Creativity Meets Coding!</span>
+            <a class="dropdown-item" href="#lit" style="color: inherit; text-decoration: none;">
+              <div class="home-btn">
+                Get Started
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
       <div class="whatIs-div1 section-padding si2">
         <h1 class="whatIs-title1">What is Web Block Craft?</h1>
@@ -737,57 +773,38 @@
           <div class="autoAlignContainer">
             
             <div class="doc-cards-container">
+
               <div class="doc-card-wrapper">
-              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
-                <div>
-                  <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
-                      </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
-                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
+                <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
+                  <div>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                      <div style="display: flex; flex-direction: column;">
+                        <span style="font-weight: bold; font-size: 1.2em;">Topic Assessment </span>
+                        <span style="font-size: 1.0em;">Submitted on: 15 July 2023
+                        </span>
+                        <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                        <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
+                          <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1--2y96fLBdQC3-BQOrMkYW-CaZyhoW1s?usp=drive_link')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/1bOUDRklJ-nHBAdDfFVB7f2qxAuUprWYF/view?usp=drive_link', 'taf.pdf')">Download</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+
 
               <div class="doc-card-wrapper">
               <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
                 <div>
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
+                      <span style="font-weight: bold; font-size: 1.2em;">Status Document I </span>
+                      <span style="font-size: 1.0em;">Submitted on: 3 November 2023
                       </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Individual Assignment</span>
                       <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-              <div class="doc-card-wrapper">
-              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
-                <div>
-                  <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
-                      </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
-                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1--2y96fLBdQC3-BQOrMkYW-CaZyhoW1s?usp=drive_link')">View</div>
                       </div>
                     </div>
                   </div>
@@ -800,19 +817,57 @@
                 <div>
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
+                      <span style="font-weight: bold; font-size: 1.2em;">Status Document II </span>
+                      <span style="font-size: 1.0em;">Submitted on: 18 March 2024
                       </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Individual Assignment</span>
                       <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1Oo1n0tEOxa4fIHWwS5H4z9mdDDu7COLh?usp=drive_link')">View</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="doc-card-wrapper">
+              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
+                <div>
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; flex-direction: column;">
+                      <span style="font-weight: bold; font-size: 1.2em;">Research Paper </span>
+                      <span style="font-size: 1.0em;">Submitted on: 4 March 2024
+                      </span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1chN4Nsw7oZOfi4tItvBaudX8EycdojLk?usp=drive_link')">View</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="doc-card-wrapper">
+              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
+                <div>
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; flex-direction: column;">
+                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
+                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
+                      </span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group & Individual Assignment</span>
+                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1E5N2HqHzIM-Kml71siGbtmlqhIdWg3oK?usp=drive_link')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://docs.google.com/document/d/1Pq5UCA3xuFdV5V5xT22yxpyZyv0qjMNN/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true', 'my_report.pdf')">Download</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
               
 
           </div>
@@ -834,52 +889,14 @@
                 <div>
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
-                      </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
-                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      <span style="font-weight: bold; font-size: 1.2em;">Project Proposal</span>
+                      <span style="font-size: 1.0em;">Submitted on: 31 July 2023
 
-              <div class="doc-card-wrapper">
-              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
-                <div>
-                  <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
                       </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group & Individual Assignment</span>
                       <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-              <div class="doc-card-wrapper">
-              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
-                <div>
-                  <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
-                      </span>
-                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
-                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://docs.google.com/presentation/d/15akrAAW_IKWvTXsoPeYTihl2BM9b8xW4/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://docs.google.com/presentation/d/15akrAAW_IKWvTXsoPeYTihl2BM9b8xW4/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true', 'project proposal.pptx')">Download</div>
                       </div>
                     </div>
                   </div>
@@ -892,13 +909,52 @@
                 <div>
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; flex-direction: column;">
-                      <span style="font-weight: bold; font-size: 1.2em;">Final Report</span>
-                      <span style="font-size: 1.0em;">Submitted on: 5 April 2024
+                      <span style="font-weight: bold; font-size: 1.2em;">Progress Presentation I</span>
+                      <span style="font-size: 1.0em;">Submitted on: 3 November 2023
                       </span>
                       <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
                       <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
-                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link')">View</div>
-                        <div class="common-btn" onclick="downloadPDF('https://drive.google.com/file/d/13-sG3OrZJuk_nrxKXypM6CNh5Gq5spA7/view?usp=drive_link', 'my_report.pdf')">Download</div>
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1gOUQsVv2w4NGIQFMvmCPNdUYNS5YVDCS?usp=drive_link')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://docs.google.com/presentation/d/1KsRqZMHE4uwzHX9zu-XAMRttSDbALPMQ/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true', 'progress presentation 1.pdf')">Download</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="doc-card-wrapper">
+              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
+                <div>
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; flex-direction: column;">
+                      <span style="font-weight: bold; font-size: 1.2em;">Progress Presentation II</span>
+                      <span style="font-size: 1.0em;">Submitted on: 18 March 2024
+                      </span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://drive.google.com/drive/folders/1m9bxJYw92R4cVq1ji_wb4jA7cHBy7DKU?usp=drive_link')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://docs.google.com/presentation/d/1KsRqZMHE4uwzHX9zu-XAMRttSDbALPMQ/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true', 'progress presentation 1.pdf')">Download</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+            <div class="doc-card-wrapper">
+              <div class="doc-card swipe-effect" style="margin-bottom: 20px;">
+                <div>
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; flex-direction: column;">
+                      <span style="font-weight: bold; font-size: 1.2em;">Final Presentation</span>
+                      <span style="font-size: 1.0em;">Submitted on: 18 May 2024
+                      </span>
+                      <span style="font-size: 1.0em; margin-top: 20px;" class="blue-font">Group Assignment</span>
+                      <div style="display: flex; justify-content: end ; margin-top:12px; gap: 12px;">
+                        <div class="common-btn2" onclick="openPDFInNewTab('https://docs.google.com/presentation/d/1IK51Tr1fIM4c3bshWAg6jdalrSGeHOrj/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true')">View</div>
+                        <div class="common-btn" onclick="downloadPDF('https://docs.google.com/presentation/d/1IK51Tr1fIM4c3bshWAg6jdalrSGeHOrj/edit?usp=drive_link&ouid=113571278712463858163&rtpof=true&sd=true', 'final presentation.pptx')">Download</div>
                       </div>
                     </div>
                   </div>
