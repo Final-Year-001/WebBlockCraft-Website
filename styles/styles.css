@@ -282,7 +282,7 @@ footer {
 
 .lit-survey-div1{
   background-color: #ffffff;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .commonDiv{
@@ -297,6 +297,7 @@ footer {
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
+  padding-top: 100px;
 }
 
 .sysOverImg{
@@ -382,7 +383,7 @@ justify-content: center;
 }
 
 .gap-div1{
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .RObject-div1{
@@ -393,6 +394,7 @@ justify-content: center;
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
   margin-bottom: 3rem; /* Adjust margin as needed */
+  padding-top: 100px;
 }
 
 .gap-card{
