@@ -156,7 +156,9 @@ nav ul li a:hover {
     border-style: solid;
     border-radius: 15px;
     background-color: #ffffff;
-    width: 700px;
+    /* width: 700px; */
+    min-width: 300px;
+    max-width: 480px;
     text-align: start;
     font-size: 1.1em;
     padding: 20px;
@@ -230,12 +232,18 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+.about-name{
+   font-size: 1.3em;
+   font-weight: bold;
+
+}
+
 .about-card-bot {
   background-color: #ffffff;
   width: 250px;
   text-align: start;
   font-size: 1.1em;
-  padding: 20px;
+  padding: 0px 20px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -254,10 +262,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: medium;
 }
-.team-content{
-    padding: 10px;
-    padding-top: 30px;
-}
+
 
 /* About Section */
 .about-section {
@@ -305,7 +310,7 @@ nav ul li a:hover {
 .contact-section button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #039dfc;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -317,9 +322,9 @@ nav ul li a:hover {
 
 .contact-links {
   list-style: none;
-  padding: 0;
+  padding: 0px 20px;  
   display: flex; /* Use flexbox to arrange items horizontally */
-  justify-content: center; /* Center the items horizontally */
+  justify-content: space-between; /* Center the items horizontally */
 }
 
 .contact-links li {
@@ -495,6 +500,10 @@ footer {
     background-color: #039dfc23;
 }
 
+.blue-font{
+    color: #039dfc;
+}
+
 
 
 /* Used to identify the section areas. Keep these commented while working */
@@ -505,6 +514,8 @@ background-color: #48b9ff;
 .si2{
     background-color: #ffc74e;
 } */
+
+
 
 .RObject-card {
   background-color: #039dfc3a;
@@ -786,4 +797,51 @@ background-color: #48b9ff;
     font-size: 1em;
     color: #666;
     margin-top: 10px;
+}
+
+
+
+
+/* Experimental  */
+.doc-card {
+    background-color: white; /* Base background color */
+  }
+  
+  .doc-card:hover {
+    background: linear-gradient(to right, #fd769f4f, #e4b6f765, #a2d8fa65); /* Swipe color and back to white */
+    background-size: 200% 100%; /* Define swipe width */
+    animation: swipe 1s ease forwards; /* Animation properties */
+    animation-fill-mode: forwards; /* Keep animation applied after hover */
+}
+  
+  @keyframes swipe {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -100% 0;
+    }
+  }
+
+
+  .doc-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between cards */
+}
+
+/* Styling for each doc-card-wrapper */
+.doc-card-wrapper {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    min-width: 250px; /* Minimum width for each card */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .doc-card-wrapper {
+        flex: 1 1 100%; /* Stack cards vertically on smaller screens */
+    }
+    .docs{
+        padding-left: 20px
+    }
 }
