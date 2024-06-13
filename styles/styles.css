@@ -305,14 +305,43 @@ nav ul li a:hover {
 .contact-section button {
   padding: 10px 20px;
   border: none;
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .contact-section button:hover {
-  background-color: #f39c12;
+  background-color: #039dfc;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.contact-links li {
+  margin: 0 15px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.contact-links a i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.contact-links a:hover {
+  color: #007bff;
 }
 
 footer {
