@@ -137,13 +137,9 @@ nav ul li a:hover {
         padding-left: 1rem; /* Assuming 1rem is the base unit for padding in your design */
         padding-right: 1rem; /* /* Adjust padding as needed */
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;
 }
-
-.testT {
-background-color: #039dfc;
-  }
 
 .about-main {
   display: flex;
@@ -152,6 +148,73 @@ background-color: #039dfc;
   align-items: center; /* Centers items horizontally */
   justify-content: center;
   line-height: 1.5;
+  scale: 0.9;
+}
+
+.doc-card{
+    border-color: rgb(233, 233, 233);
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 700px;
+    text-align: start;
+    font-size: 1.1em;
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.common-btn{
+    background-color: #039dfc;
+    padding: 10px;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:hover{
+    background-color: #0084d6;
+    transform: scale(1.1); 
+}
+
+.common-btn:active{
+    background-color: #0074bd;
+    transform: scale(1.0); 
+}
+
+
+.common-btn2{
+    border-color: #919191;
+    border-style: solid;
+    padding: 10px;
+    width: 120px;
+    height: 22px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn2:hover{
+    background-color: #919191;
+    transform: scale(1.1); 
+}
+
+.common-btn2:active{
+    background-color: rgb(141, 141, 141);
+    transform: scale(1.0); 
 }
 
 .about-card{
@@ -198,10 +261,9 @@ background-color: #039dfc;
 
 /* About Section */
 .about-section {
-  background-color: #f9f9f9;
-  padding: 80px 20px;
+  background-color: #ffffff;
+  padding: 20px;
   text-align: center;
-  margin-top: 120px;
 }
 
 /* Features Section */
@@ -318,27 +380,16 @@ footer {
 
 .whatIs-div1 {
   background-color: #ffffff;
-  padding-top: 60px;
 }
 
 .lit-survey-div1 {
   background-color: #ffffff;
-  padding-top: 80px;
-}
-
-.commonDiv {
-  padding-top: 120px;
-}
-
-.sysOver-div1 {
-  padding-top: 120px;
 }
 
 .whatIs-title1 {
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
-  margin-bottom: 2rem; /* Adjust margin as needed */
-  padding-top: 100px;
+ /* Adjust margin as needed */
 }
 
 .sysOverImg {
@@ -384,13 +435,47 @@ footer {
   background-color: red;
 }
 
-.padding {
-  padding: 400px;
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section-padding {
-  padding-top: 120px;
+.text-left{
+    text-align: start;
 }
+
+.text-right{
+    text-align: end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-2{
+  font-size: 2rem
+}
+
+.title-auto{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px; 
+}
+
+.lite-bg-blue{
+    background-color: #039dfc23;
+}
+
+
+
+/* Used to identify the section areas. Keep these commented while working */
+/* .si1{
+background-color: #48b9ff;
+}
+
+.si2{
+    background-color: #ffc74e;
+} */
 
 .RObject-card {
   background-color: #039dfc3a;
@@ -412,6 +497,13 @@ footer {
   line-height: 1.5;
 }
 
+.sysOver-text2 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    padding-right: 50px;
+    line-height: 1.5;
+  }
+
 .gap-text1 {
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
@@ -428,10 +520,6 @@ footer {
 
 
 
-.gap-div1 {
-  margin-top: 10px;
-}
-
 .RObject-div1 {
   margin-top: 120px;
 }
@@ -439,8 +527,6 @@ footer {
 .gap-title1 {
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
-  margin-bottom: 3rem; /* Adjust margin as needed */
-  padding-top: 100px;
 }
 
 .gap-card {
@@ -501,6 +587,7 @@ footer {
     1.3
   ); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
 }
+
 
 .milestone-content1 {
     display: flex;
@@ -606,11 +693,11 @@ footer {
 /* MILESTONE SECTION */
 
 .milestones-section {
-    padding: 100px;
+    padding: 75px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* max-width: 1000px; */
     border-radius: 25px;
+    max-width: 750px;
 }
 
 .section-title {
@@ -637,11 +724,14 @@ footer {
 
 .milestone-content {
     background-color: #039dfc13;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: 10px;
     border-radius: 10px;
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .milestone-content:before {
