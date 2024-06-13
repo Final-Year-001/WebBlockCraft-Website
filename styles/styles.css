@@ -9,9 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-
 /* #039dfc */
-
 
 header {
   display: flex;
@@ -23,7 +21,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
 }
 
 .logo {
@@ -67,42 +65,44 @@ nav ul li a:hover {
   display: flex; /* Make the navigation items visible */
 }
 .navBtns .dropdown-menu {
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-background-color: white;
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .navBtns .dropdown-item {
-padding: 10px 15px;
-text-decoration: none;
-color: black;
-display: block;
-transition: background-color 0.3s, color 0.3s;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navBtns li:hover .dropdown-menu {
-display: block;
+  display: block;
 }
 
 /* Dropdown icon styling */
 .dropdown-icon {
-margin-left: 5px;
-font-size: 12px;
-transition: transform 0.3s;
+  margin-left: 5px;
+  font-size: 12px;
+  transition: transform 0.3s;
 }
 
 .navBtns li:hover .dropdown-icon {
-transform: rotate(180deg); /* Optional: rotate the icon when the menu is open */
+  transform: rotate(
+    180deg
+  ); /* Optional: rotate the icon when the menu is open */
 }
 
 /* Submenu item hover effect */
 .navBtns .dropdown-item:hover {
-background-color: #f0f0f0; /* Change to desired hover background color */
-color: #000; /* Change to desired hover text color */
+  background-color: #f0f0f0; /* Change to desired hover background color */
+  color: #000; /* Change to desired hover text color */
 }
 
 .what-is-content {
@@ -121,41 +121,149 @@ color: #000; /* Change to desired hover text color */
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 300px ; /* Adjust based on the image */
+  padding: 300px; /* Adjust based on the image */
 }
 
 .banner-content {
   max-width: 800px;
   margin: 0 auto;
-  color : #039dfc
+  color: #039dfc;
 }
 
-.about-main{
+.autoAlignAbout{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px; /* You may adjust the max-width value as needed */
+        padding-left: 1rem; /* Assuming 1rem is the base unit for padding in your design */
+        padding-right: 1rem; /* /* Adjust padding as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.about-main {
   display: flex;
   flex-wrap: wrap;
   gap: 30px; /* Adjust the gap as needed */
   align-items: center; /* Centers items horizontally */
   justify-content: center;
+  line-height: 1.5;
+  scale: 0.9;
 }
 
-.about-card-top{
-  background-color:#039dfc ;
-  height: 220px;
-  width:  220px;
+.doc-card{
+    border-color: rgb(233, 233, 233);
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 700px;
+    text-align: start;
+    font-size: 1.1em;
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
 }
 
-.about-card-bot{
-  background-color:#1a71a7 ;
-  height: 220px;
-  width:  220px;
+.common-btn{
+    background-color: #039dfc;
+    padding: 10px;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:hover{
+    background-color: #0084d6;
+    transform: scale(1.1); 
+}
+
+.common-btn:active{
+    background-color: #0074bd;
+    transform: scale(1.0); 
+}
+
+
+.common-btn2{
+    border-color: #919191;
+    border-style: solid;
+    padding: 10px;
+    width: 120px;
+    height: 22px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn2:hover{
+    background-color: #919191;
+    transform: scale(1.1); 
+}
+
+.common-btn2:active{
+    background-color: rgb(141, 141, 141);
+    transform: scale(1.0); 
+}
+
+.about-card{
+    border-color: rgb(233, 233, 233);
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.about-card-top {
+  background-color: #e9e9e931;
+  height: 250px;
+  width: 250px;
+  padding: 20px;
+}
+
+.about-card-bot {
+  background-color: #ffffff;
+  width: 250px;
+  text-align: start;
+  font-size: 1.1em;
+  padding: 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.about-team-picture{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.team-stat{
+    background-color: #039dfc;
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+}
+.team-content{
+    padding: 10px;
+    padding-top: 30px;
 }
 
 /* About Section */
 .about-section {
-  background-color: #f9f9f9;
-  padding: 80px 20px;
+  background-color: #ffffff;
+  padding: 20px;
   text-align: center;
-  margin-top: 120px;
 }
 
 /* Features Section */
@@ -207,8 +315,6 @@ color: #000; /* Change to desired hover text color */
   background-color: #f39c12;
 }
 
-
-
 footer {
   text-align: center;
   padding-bottom: 20px;
@@ -219,7 +325,6 @@ footer {
   bottom: 0;
 }
 
-
 .menu-btn {
   display: none; /* Initially hide the menu button */
 }
@@ -227,43 +332,42 @@ footer {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .navBtns {
-      display: none; /* Hide navigation buttons */
-      flex-direction: column; /* Arrange vertically */
-      background-color: #333; /* Background color for the menu */
-      position: absolute;
-      top: 60px; /* Adjust based on header height */
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-      z-index: 1000;
+    display: none; /* Hide navigation buttons */
+    flex-direction: column; /* Arrange vertically */
+    background-color: #333; /* Background color for the menu */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
   }
 
   .navBtns li {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .navBtns li a {
-      color: #fff;
-      text-decoration: none;
+    color: #fff;
+    text-decoration: none;
   }
 
   .menu-btn {
-      display: block; /* Show menu button */
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: none;
-      border: none;
-      font-size: 24px;
-      color: #fff;
-      cursor: pointer;
-      z-index: 1001;
+    display: block; /* Show menu button */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
   }
 }
 
-
-.autoAlignContainer{
+.autoAlignContainer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px; /* You may adjust the max-width value as needed */
@@ -272,43 +376,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
- }
-
+}
 
 .whatIs-div1 {
   background-color: #ffffff;
-  padding-top: 60px;
 }
 
-.lit-survey-div1{
+.lit-survey-div1 {
   background-color: #ffffff;
-  padding-top: 80px;
-}
-
-.commonDiv{
-  padding-top: 120px;
-}
-
-.sysOver-div1{
-  padding-top: 120px;
 }
 
 .whatIs-title1 {
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
-  margin-bottom: 2rem; /* Adjust margin as needed */
-  padding-top: 100px;
+ /* Adjust margin as needed */
 }
 
-.sysOverImg{
+.sysOverImg {
   max-width: 650px;
   transition: transform 0.2s ease-in-out;
 }
-.sysOverImg:hover{
+.sysOverImg:hover {
   max-width: 650px;
   transform: scale(1.2);
 }
-
 
 .whatIs-content1 {
   display: flex;
@@ -317,7 +408,7 @@ footer {
   text-align: justify;
 }
 
-.sysOver-content1{
+.sysOver-content1 {
   display: flex;
   flex-direction: row; /* Adjust for horizontal layout if needed */
   align-items: center;
@@ -340,30 +431,83 @@ footer {
   gap: 50px;
 }
 
+.BGcolor {
+  background-color: red;
+}
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text-left{
+    text-align: start;
+}
+
+.text-right{
+    text-align: end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-2{
+  font-size: 2rem
+}
+
+.title-auto{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px; 
+}
+
+.lite-bg-blue{
+    background-color: #039dfc23;
+}
+
+
+
+/* Used to identify the section areas. Keep these commented while working */
+/* .si1{
+background-color: #48b9ff;
+}
+
+.si2{
+    background-color: #ffc74e;
+} */
+
 .RObject-card {
-background-color: #039dfc3a;
-padding: 40px;
-border-radius: 25px;
+  background-color: #039dfc3a;
+  padding: 40px;
+  border-radius: 25px;
 }
 
 .whatIs-text1 {
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
   padding-right: 100px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 .sysOver-text1 {
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
   padding-left: 50px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
+
+.sysOver-text2 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    padding-right: 50px;
+    line-height: 1.5;
+  }
 
 .gap-text1 {
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
-  line-height: 1.5; 
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -371,123 +515,129 @@ border-radius: 25px;
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 2rem; /* Adjust margin as needed */
   padding-left: 100px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
-.tech-content1{
-  display: flex;
-flex-wrap: wrap;
-gap: 30px; /* Adjust the gap as needed */
-align-items: center; /* Centers items horizontally */
-justify-content: center;
-}
 
-.gap-div1{
-  margin-top: 10px;
-}
 
-.RObject-div1{
+.RObject-div1 {
   margin-top: 120px;
 }
 
 .gap-title1 {
   text-align: center;
   font-size: 2rem; /* Adjust font size as needed */
-  margin-bottom: 3rem; /* Adjust margin as needed */
-  padding-top: 100px;
 }
 
-.gap-card{
+.gap-card {
   background-color: #ebebeb3d;
   padding: 20px;
   border-radius: 10px;
 }
 
-.tech-text1{
+.tech-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap as needed */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center;
+  }
+
+  .tech-inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text within the h3 */
+    justify-content: center; /* Centers items vertically */
+    transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */
+  }
+
+.tech-text1 {
   background-color: #ffffff; /* Adjust the background color as needed */
-  width: 200px; /* Set a fixed width */
-  height: 200px; /* Set a fixed height equal to the width */
+  width: 190px; /* Set a fixed width */
+  height: 190px; /* Set a fixed height equal to the width */
   border-radius: 50%; /* Makes the box round */
   display: flex; /* Use flexbox for centering content */
   justify-content: center; /* Centers items horizontally */
   align-items: center; /* Centers items vertically */
-  text-align: center; 
+  text-align: center;
   border-color: #e9e9e9;
   border-style: solid;
 }
 
 .tech-text1:hover {
   background-color: white;
-  box-shadow: 0 0 80px #039dfc85; 
-  
+  box-shadow: 0 0 80px #039dfc85;
 }
 
-.tech-Img{
-  max-width: 100px;
+.tech-Img {
+  max-width: 80px;
   transition: transform 0.2s ease-in-out;
 }
 
-.tech-inner-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers items horizontally */
-  text-align: center; /* Centers text within the h3 */
-  justify-content: center; /* Centers items vertically */
-  transition: transform 0.2s ease-in-out; /* Adds transition for smooth scaling */ 
-
-}
 
 .tech-inner-box:hover {
   transform: scale(1.1); /* Scales the element by 1.1 times on hover */
 }
 
+
+
 .tech-inner-box:hover .tech-Img {
-  transform: scale(1.3); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
+  transform: scale(
+    1.3
+  ); /* Scales the image inside .tech-inner-box by 1.3 times on hover */
 }
 
-.blueText{
-  color: #039dfc
+
+.milestone-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    gap: 50px;
+  }
+
+.blueText {
+  color: #039dfc;
 }
 
-
-
-
-@media screen and (max-width: 1024px) { /* Adjust the max-width value as needed */
+@media screen and (max-width: 1024px) {
+  /* Adjust the max-width value as needed */
   .sysOver-text1 {
-      padding: 30px;
+    padding: 30px;
   }
-  .sysOver-content1{
-      flex-direction: column; 
+  .sysOver-content1 {
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 768px) { /* Adjust the max-width value as needed */
+@media screen and (max-width: 768px) {
+  /* Adjust the max-width value as needed */
   .whatIs-content1 {
-      flex-direction: column; /* Change align-items to row for small screens */
+    flex-direction: column; /* Change align-items to row for small screens */
   }
   .probSol-content1 {
-      flex-direction: column; /* Change align-items to row for small screens */
+    flex-direction: column; /* Change align-items to row for small screens */
   }
   .whatIs-text1 {
-      padding: 30px;
+    padding: 30px;
   }
   .lit-survey-text1 {
-      padding: 30px; 
+    padding: 30px;
   }
-  .lit-survey-image1{
-      display: none;
-  }
-  .sysOver-text1 {
-      padding: 30px;
+  .lit-survey-image1 {
+    display: none;
   }
   .sysOver-text1 {
-      padding: 30px;
+    padding: 30px;
   }
-  .sysOver-content1{
-      flex-direction: column; 
+  .sysOver-text1 {
+    padding: 30px;
+  }
+  .sysOver-content1 {
+    flex-direction: column;
   }
 }
-
 
 /* This is for the Overview diagram image */
 @media only screen and (max-width: 600px) {
@@ -510,36 +660,101 @@ justify-content: center;
   }
 }
 
-
 /* This is for technologiers section  */
 @media (max-width: 1200px) {
   .tech-Img {
     flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
   }
-  .tech-Img{
-      max-width: 100px;
-    }
+  .tech-Img {
+    max-width: 100px;
+  }
 }
 
 @media (max-width: 768px) {
   .tech-Img {
     flex: 1 1 calc(50% - 20px); /* 2 items per row */
   }
-  .tech-Img{
-      max-width: 90px;
-    }
+  .tech-Img {
+    max-width: 90px;
+  }
 }
 
 @media (max-width: 480px) {
   .tech-Img {
     flex: 1 1 calc(100% - 20px); /* 1 item per row */
   }
-  .tech-Img{
-      max-width: 70px;
-    }
+  .tech-Img {
+    max-width: 70px;
+  }
 }
 
 
 
+/* MILESTONE SECTION */
 
+.milestones-section {
+    padding: 75px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    max-width: 750px;
+}
 
+.section-title {
+    text-align: center;
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 4px solid #ddd;
+}
+
+.milestone {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.milestone:last-child {
+    margin-bottom: 0;
+}
+
+.milestone-content {
+    background-color: #039dfc13;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1em;
+}
+
+.milestone-content:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #039dfc;
+    border: 4px solid #fff;
+    top: 65px;
+    left: -58px;
+    box-shadow: 0 0 0 10px #ddd;
+}
+
+.milestone-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.milestone-description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
