@@ -16,11 +16,27 @@
       <!-- Menu button -->
       <nav>
         <ul class="navBtns">
+          <!-- changed menu buttons according to the requirements -->
           <li><a href="#home">Home</a></li>
-          <li><a href="#sysOver">Overview</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#tech">Technologies</a></li>
+          <li><a href="#domain">Project Scope <span class="dropdown-icon">▼</span> </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#lit">Literature Survey</a>
+              <a class="dropdown-item" href="#research_gap">Research Gap</a>
+              <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+              <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+              <a class="dropdown-item" href="#methodology">Methodology</a>
+              <a class="dropdown-item" href="#tech">Technologies</a>
+            </div>
+          </li>
+          <li><a href="#milestone">Milestones</a></li>
+          <li><a href="#downloads">Downloads <span class="dropdown-icon">▼</span> </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#docs">Documents</a>
+              <a class="dropdown-item" href="#presentations">Presentations</a>
+            </div>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -44,9 +60,8 @@
               app, or diving into data science, coding empowers you to turn your
               ideas into reality. With dedication and perseverance, anyone can
               learn to code and unlock the doors to innovation and opportunity.
-              So, roll up your sleeves, embrace the challenges, and embark on an
-              exciting journey of continuous learning and growth in the
-              ever-evolving world of technology.
+              So, roll up your sleeves, embrace the challenges, and let's embark on an
+              exciting journey of learning web programming.
             </p>
             <img
               src="assets/home/build.png"
@@ -58,7 +73,8 @@
         </div>
       </div>
 
-      <div class="lit-survey-div1">
+    <div id="domain">
+      <div class="lit-survey-div1" id="lit">
         <h1 class="whatIs-title1">
           Literature <span class="blueText">Survey</span>
         </h1>
@@ -102,7 +118,7 @@
         </div>
       </div>
 
-      <div class="gap-div1">
+      <div class="gap-div1" id="research_gap">
         <h1 class="whatIs-title1">
           Research <span class="blueText">Gap</span>
         </h1>
@@ -152,9 +168,9 @@
         </div>
       </div>
 
-      <div class="gap-div1">
+      <div class="gap-div1" id="research_problem">
         <h1 class="gap-title1">
-          Research <span class="blueText">Problem and Solution</span>
+          Research <span class="blueText">Problem </span> <span class="blackText">and </span> <span class="blueText">Solution</span>
         </h1>
         <div class="autoAlignContainer">
           <div class="probSol-content1">
@@ -197,7 +213,7 @@
         </div>
       </div>
 
-      <div class="RObject-div1">
+      <div class="RObject-div1" id="research_objectives">
         <h1 class="whatIs-title1">
           Research <span class="blueText">Objectives</span>
         </h1>
@@ -247,9 +263,9 @@
         </div>
       </div>
 
-      <div class="commonDiv" id="sysOver">
+      <div class="commonDiv" id="methodology">
         <h1 class="whatIs-title1">
-          System <span class="blueText">Overview</span>
+          Methodology
         </h1>
         <div class="autoAlignContainer">
           <div class="sysOver-content1">
@@ -414,8 +430,9 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="commonDiv">
+      <div class="commonDiv" id="milestone">
         <h1 class="whatIs-title1">
           Project <span class="blueText">Milestones</span>
         </h1>
@@ -432,51 +449,37 @@
         </div>
       </div>
 
-      <div class="commonDiv">
-        <h1 class="whatIs-title1">Documents</h1>
-        <div class="autoAlignContainer">
-          <div class="whatIs-content1">
-            <p class="gap-text1">
-              Learning coding opens up a world of endless possibilities. It's
-              not just about mastering programming languages; it's about
-              developing problem-solving skills, logical thinking, and
-              creativity. Whether you're building a website, developing a mobile
-              and growth in the ever-evolving world of technology.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="commonDiv">
-        <h1 class="whatIs-title1">Presentations</h1>
-        <div class="autoAlignContainer">
-          <div class="whatIs-content1">
-            <p class="gap-text1">
-              Learning coding opens up a world of endless possibilities. It's
-              not just about mastering programming languages; it's about
-              developing problem-solving skills, logical thinking, and
-              creativity. Whether you're building a website, developing a mobile
-              and growth in the ever-evolving world of technology.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="commonDiv">
-        <h1 class="whatIs-title1" id="tech">Our Team</h1>
-        <div class="autoAlignContainer">
-          <div class="about-main">
-            <div>
-              <div  class="about-card-top">
-                qq
-              </div>
-              <div  class="about-card-bot">
-                info goes here
-              </div>
+      <div id="downloads">
+        <div class="commonDiv" id="docs">
+          <h1 class="whatIs-title1">Documents</h1>
+          <div class="autoAlignContainer">
+            <div class="whatIs-content1">
+              <p class="gap-text1">
+                Learning coding opens up a world of endless possibilities. It's
+                not just about mastering programming languages; it's about
+                developing problem-solving skills, logical thinking, and
+                creativity. Whether you're building a website, developing a mobile
+                and growth in the ever-evolving world of technology.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="commonDiv" id="presentations">
+          <h1 class="whatIs-title1">Presentations</h1>
+          <div class="autoAlignContainer">
+            <div class="whatIs-content1">
+              <p class="gap-text1">
+                Learning coding opens up a world of endless possibilities. It's
+                not just about mastering programming languages; it's about
+                developing problem-solving skills, logical thinking, and
+                creativity. Whether you're building a website, developing a mobile
+                and growth in the ever-evolving world of technology.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
 
       <section id="about" class="about-section">
         <h2>About Us</h2>
@@ -485,8 +488,27 @@
           to build stunning websites effortlessly. Our mission is to empower
           developers and designers alike with intuitive solutions.
         </p>
+
+        <div class="commonDiv">
+          <h1 class="whatIs-title1" id="tech">Our Team</h1>
+          <div class="autoAlignContainer">
+            <div class="about-main">
+              <div>
+                <div  class="about-card-top">
+                  qq
+                </div>
+                <div  class="about-card-bot">
+                  info goes here
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
-      <section id="features" class="features-section">
+
+      <!-- do we need this? -->
+      <!-- <section id="features" class="features-section">
         <h2>Features</h2>
         <p>Discover the amazing features of Web Block Craft:</p>
         <ul>
@@ -495,7 +517,8 @@
           <li>Responsive design for seamless mobile compatibility</li>
           <li>Customizable CSS styles for advanced users</li>
         </ul>
-      </section>
+      </section> -->
+
       <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <p>Have questions or feedback? Reach out to us!</p>
@@ -506,6 +529,7 @@
           <button type="submit">Send</button>
         </form>
       </section>
+
     </main>
     <footer>
       <p>&copy; 2024 Web Block Craft. All rights reserved.</p>
