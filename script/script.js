@@ -36,3 +36,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+function openPDFInNewTab(pdfUrl) {
+    window.open(pdfUrl, '_blank');
+}
+
+function downloadPDF(pdfUrl, desiredFilename) {
+    // Create a dummy base64 string (don't use for actual PDF content)
+    var dummyData = btoa('This is content (ignored)');
+  
+    var link = document.createElement('a');
+    link.href = `data:application/pdf;base64,${dummyData}`; // Placeholder
+    link.download = desiredFilename; // Set the desired filename
+  
+    // Check if browser supports data URI downloads
+    if (link.download !== undefined) {
+      link.click();
+    } else {
+      console.error('Data URI download not supported by your browser.');
+      // Offer an alternative download method (e.g., server-side download)
+    }
+  }
