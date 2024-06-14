@@ -734,7 +734,7 @@ background-color: #48b9ff;
 
 .with-bg-image {
     /* background-image: url("../assets/home/bg.png");   */
-    height: 800px;
+    /* height: 800px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
