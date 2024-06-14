@@ -733,7 +733,7 @@ background-color: #48b9ff;
 
 
 .with-bg-image {
-    background-image: url("../assets/home/bg.png");  
+    /* background-image: url("../assets/home/bg.png");   */
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
@@ -742,7 +742,7 @@ background-color: #48b9ff;
 }
 
 .home-banner{
-    padding-top: 100px;
+    padding-top: 0px;
     padding-bottom: 150px;
 }
 .home-btn {
