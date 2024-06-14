@@ -767,6 +767,25 @@ background-color: #48b9ff;
     .with-bg-image{
       display: none;
     }
+
+    .logo h1 {
+      display: none;
+    }
+    
+    .logo {
+      padding: 10px;
+      padding-left: 3em;
+    }
+
+    header {
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .menu-btn {
+      top: 18px;
+      padding-right: 20px;
+    }
   }
   
   /* For medium devices (tablets, 600px to 768px) */
@@ -774,7 +793,24 @@ background-color: #48b9ff;
     .with-bg-image{
         display: none;
     }
-   
+
+    .logo h1 {
+      display: none;
+    }
+    
+    .logo {
+      padding: 10px;
+      padding-left: 3em;
+    }
+
+    header {
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .menu-btn {
+      top: 15px;
+    }
   }
   
   /* For large devices (desktops, 768px and up) */
